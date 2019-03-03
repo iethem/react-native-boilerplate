@@ -10,7 +10,7 @@ This repo was cloned from the [react-boilerplate](https://github.com/react-boile
 
 ## Quick start
 
-1.  Make sure that you have Node.js v8.10 and npm v5 or above installed.
+1.  Make sure that you have Node.js v8.10 and npm v5 and react-native-cli v2.0.1 or above installed.
 2.  Clone this repo using `git clone --depth=1 https://github.com/iethem/react-native-boilerplate <YOUR_PROJECT_NAME>`
 3.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.<br />
 4.  Run `npm install` in order to install dependencies.<br />

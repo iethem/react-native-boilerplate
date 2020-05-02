@@ -60,9 +60,7 @@ At this point you can run the following commands to see the example app:
     
     For <b>IOS</b>:
     ```sh
-    cd ios
-    pod install # to install pod dependencies
-    cd ..       # to come back to the root folder
+    npx pod-install # to install pod dependencies
     npm run ios # to run the iOS application
     ```   
     For <b>Android</b>:

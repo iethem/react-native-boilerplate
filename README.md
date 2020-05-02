@@ -98,4 +98,4 @@ Contributions of any kind welcome!
 
 ## License
 
-This project is licensed under the MIT license, Copyright (c) 2019 İbrahim Ethem Topçu. For more information see [LICENSE](LICENSE.md).
+This project is licensed under the MIT license, Copyright (c) 2019 İbrahim Ethem Topçu. For more information see [LICENSE](LICENSE).

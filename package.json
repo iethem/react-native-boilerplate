@@ -28,7 +28,7 @@
     "chalk": "^2.4.2",
     "immutable": "3.8.2",
     "invariant": "2.2.4",
-    "lodash": "4.17.11",
+    "lodash": "4.17.13",
     "prop-types": "15.6.2",
     "react": "16.6.0",
     "react-native": "^0.58.6",

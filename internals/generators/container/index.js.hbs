@@ -5,16 +5,13 @@
  */
 
 {{#if memo}}
-import React, { memo } from 'react';
+import React, { memo {{#if wantHeaders}}, useLayoutEffect {{/if}} } from 'react';
 {{else}}
-import React from 'react';
+import React {{#if wantHeaders}} { useLayoutEffect } {{/if}} from 'react';
 {{/if}}
 import { View, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-{{#if wantHeaders}}
-import { Helmet } from 'react-helmet';
-{{/if}}
 {{#if wantMessages}}
 import { FormattedMessage } from 'react-intl';
 {{/if}}
@@ -38,7 +35,7 @@ import saga from './saga';
 import messages from './messages';
 {{/if}}
 
-export function {{ properCase name }}() {
+export function {{ properCase name }}(props) {
   {{#if wantActionsAndReducer}}
   useInjectReducer({ key: '{{ camelCase name }}', reducer });
   {{/if}}
@@ -46,13 +43,33 @@ export function {{ properCase name }}() {
   useInjectSaga({ key: '{{ camelCase name }}', saga });
   {{/if}}
 
+  {{#if wantHeaders}}
+  const { navigation } = props;
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerTitle: () => (
+        <Text>
+        {{#if wantMessages}}
+          <FormattedMessage {...messages.title} />
+        {{else}}
+          {{ properCase name }}
+        {{/if}}
+        </Text>
+      ),
+    });
+  }, []);
+  {{/if}}
+
   return (
     <View>
-    {{#if wantMessages}}
       <Text>
+      {{#if wantMessages}}
         <FormattedMessage {...messages.header} />
+      {{else}}
+        This is the {{ properCase name }} container!
+      {{/if}}
       </Text>
-    {{/if}}
     </View>
   );
 }
@@ -79,32 +96,9 @@ const withConnect = connect(mapStateToProps, mapDispatchToProps);
 const withConnect = connect(null, mapDispatchToProps);
 {{/if}}
 
-{{#if wantHeaders}}
-const withCompose = compose(withConnect, {{#if memo}} memo, {{/if}})({{ properCase name }});
-
-withCompose.navigationOptions = {
-  headerTitle: () => (
-    <Text>
-      <FormattedMessage {...messages.title} />
-    </Text>
-  ),
-  headerStyle: {
-    backgroundColor: '#f4511e',
-  },
-  headerTintColor: '#ff4f',
-  headerTitleStyle: {
-    fontWeight: 'bold',
-  },
-};
-
-export default withCompose;
-{{else}}
 export default compose(
   withConnect,
 {{#if memo}}
   memo,
 {{/if}}
 )({{ properCase name }});
-{{/if}}
-
-

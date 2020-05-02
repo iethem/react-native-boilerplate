@@ -20,11 +20,15 @@ export function LocaleToggle(props) {
     <View>
       <Picker
         selectedValue={props.locale}
-        style={{ height: 50, width: 100 }}
+        style={{ height: 50, width: 50 }}
         onValueChange={itemValue => props.onLocaleToggle(itemValue)}
       >
         {appLocales.map(locale => (
-          <Picker.Item label={messages[locale].defaultMessage} value={locale} />
+          <Picker.Item
+            key={locale}
+            label={messages[locale].defaultMessage}
+            value={locale}
+          />
         ))}
       </Picker>
     </View>

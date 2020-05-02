@@ -1,6 +1,6 @@
 /**
  *
- * Button
+ * Img (example)
  *
  */
 
@@ -11,8 +11,8 @@ import { Image } from 'react-native';
 
 const pic = { uri: 'https://octodex.github.com/images/original.png' };
 
-function Img() {
-  return <Image source={pic} style={{ width: 150, height: 150 }} />;
+function Img(props) {
+  return <Image source={pic} style={{ width: 150, height: 150 }} {...props} />;
 }
 
 Img.propTypes = {};

@@ -7,34 +7,23 @@
  */
 
 import React from 'react';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeScreen from 'containers/HomeScreen';
 import DetailsScreen from 'containers/DetailsScreen';
+import ReposScreen from 'containers/ReposScreen';
 
-const RootStack = createStackNavigator(
-  {
-    Home: HomeScreen,
-    Details: DetailsScreen,
-  },
-  {
-    initialRouteName: 'Home',
-    /* The header config from HomeScreen is now here */
-    // defaultNavigationOptions: {
-    //   headerStyle: {
-    //     backgroundColor: '#f4511e',
-    //   },
-    //   headerTintColor: '#fff',
-    //   headerTitleStyle: {
-    //     fontWeight: 'bold',
-    //   },
-    // },
-  },
-);
-
-const AppContainer = createAppContainer(RootStack);
+const Stack = createStackNavigator();
 
 export default function App() {
-  return <AppContainer />;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Repos" component={ReposScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }

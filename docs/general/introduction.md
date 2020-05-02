@@ -15,7 +15,7 @@ Here's a curated list of packages that you should be at least familiar with befo
 ### Core
 
 - [ ] [React](https://facebook.github.io/react/)
-- [ ] [React Router](https://github.com/ReactTraining/react-router)
+- [ ] [React Navigation](https://github.com/react-navigation)
 - [ ] [Redux](http://redux.js.org/)
 - [ ] [Redux Saga](https://redux-saga.github.io/redux-saga/)
 - [ ] [Reselect](https://github.com/reactjs/reselect)

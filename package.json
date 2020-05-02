@@ -16,11 +16,13 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "generate": "plop --plopfile internals/generators/index.js",
+    "presetup": "npm i chalk shelljs compare-versions --no-save",
+    "setup": "node ./internals/scripts/setup.js",
     "clean": "shjs ./internals/scripts/clean.js",
     "test": "jest",
     "lint": "eslint .",
     "prettify": "prettier --write",
-    "generate": "plop --plopfile internals/generators/index.js",
     "extract-intl": "node ./internals/scripts/extract-intl.js",
     "rename": "react-native-rename"
   },
@@ -53,6 +55,8 @@
     "babel-jest": "24.9.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-react-intl": "^5.1.8",
+    "chalk": "^2.4.2",
+    "compare-versions": "3.4.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -71,7 +75,7 @@
     "prettify": "^0.1.7",
     "react-native-rename": "^2.4.1",
     "react-test-renderer": "16.11.0",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.4"
   },
   "jest": {
     "preset": "react-native"

@@ -5,7 +5,7 @@ import { initialState } from './reducer';
  * Direct selector to the homeScreen state domain
  */
 
-const selectHomeScreenDomain = state => state.get('homeScreen', initialState);
+const selectHomeScreenDomain = state => state.homeScreen || initialState;
 
 /**
  * Other specific selectors
@@ -16,7 +16,10 @@ const selectHomeScreenDomain = state => state.get('homeScreen', initialState);
  */
 
 const makeSelectHomeScreen = () =>
-  createSelector(selectHomeScreenDomain, substate => substate.toJS());
+  createSelector(
+    selectHomeScreenDomain,
+    substate => substate,
+  );
 
 export default makeSelectHomeScreen;
 export { selectHomeScreenDomain };

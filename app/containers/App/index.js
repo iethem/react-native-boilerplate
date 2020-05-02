@@ -7,10 +7,11 @@
  */
 
 import React from 'react';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-import HomeScreen from '../HomeScreen';
-import DetailsScreen from '../DetailsScreen';
+import HomeScreen from 'containers/HomeScreen';
+import DetailsScreen from 'containers/DetailsScreen';
 
 const RootStack = createStackNavigator(
   {
@@ -19,14 +20,21 @@ const RootStack = createStackNavigator(
   },
   {
     initialRouteName: 'Home',
+    /* The header config from HomeScreen is now here */
+    // defaultNavigationOptions: {
+    //   headerStyle: {
+    //     backgroundColor: '#f4511e',
+    //   },
+    //   headerTintColor: '#fff',
+    //   headerTitleStyle: {
+    //     fontWeight: 'bold',
+    //   },
+    // },
   },
 );
 
 const AppContainer = createAppContainer(RootStack);
 
-/* eslint-disable react/prefer-stateless-function */
-export default class App extends React.Component {
-  render() {
-    return <AppContainer />;
-  }
+export default function App() {
+  return <AppContainer />;
 }

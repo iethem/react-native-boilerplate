@@ -13,4 +13,8 @@ export default defineMessages({
     id: `${scope}.header`,
     defaultMessage: 'This is the HomeScreen container!',
   },
+  title: {
+    id: `${scope}.title`,
+    defaultMessage: 'Home',
+  },
 });

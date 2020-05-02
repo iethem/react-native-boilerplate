@@ -13,18 +13,29 @@ import React from 'react';
 import { Provider } from 'react-redux';
 
 // Import root app
-import App from './containers/App';
+import App from 'containers/App';
+
+// Import Language Provider
+import LanguageProvider from 'containers/LanguageProvider';
 
 import configureStore from './configureStore';
+
+// Import i18n messages
+import { translationMessages } from './i18n';
 
 // Create redux store with history
 const initialState = {};
 const store = configureStore(initialState);
 
+global.Intl = require('intl');
+
 const render = () => (
   <Provider store={store}>
-    <App />
+    <LanguageProvider messages={translationMessages}>
+      <App />
+    </LanguageProvider>
   </Provider>
 );
 
 export default render;
+

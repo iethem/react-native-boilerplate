@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "app/*"
+            ],
+            "components/*": [
+                "componenst/*"
+            ],
+            "containers/*": [
+                "containers/*"
+            ],
+            "utils/*": [
+                "utils/*"
+            ],
+            "underscore": [
+                "lodash"
+            ]
+        }
+    }
+}

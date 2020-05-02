@@ -1,0 +1,7 @@
+{
+  "app.containers.DetailsScreen.header": "Bu detay ekranı",
+  "app.containers.HomeScreen.header": "Bu başlık",
+  "app.containers.HomeScreen.title": "Anasayfa",
+  "app.containers.LocaleToggle.en": "en",
+  "app.containers.LocaleToggle.tr": "tr"
+}

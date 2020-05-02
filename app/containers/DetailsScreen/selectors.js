@@ -5,8 +5,7 @@ import { initialState } from './reducer';
  * Direct selector to the detailsScreen state domain
  */
 
-const selectDetailsScreenDomain = state =>
-  state.get('detailsScreen', initialState);
+const selectDetailsScreenDomain = state => state.detailsScreen || initialState;
 
 /**
  * Other specific selectors
@@ -17,7 +16,10 @@ const selectDetailsScreenDomain = state =>
  */
 
 const makeSelectDetailsScreen = () =>
-  createSelector(selectDetailsScreenDomain, substate => substate.toJS());
+  createSelector(
+    selectDetailsScreenDomain,
+    substate => substate,
+  );
 
 export default makeSelectDetailsScreen;
 export { selectDetailsScreenDomain };

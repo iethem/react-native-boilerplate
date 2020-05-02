@@ -3,23 +3,20 @@
  * HomeScreen reducer
  *
  */
+import produce from 'immer';
+import { DEFAULT_ACTION } from './constants';
 
-import { fromJS } from 'immutable';
-import { DEFAULT_ACTION, PUT_TEST_DATA } from './constants';
+export const initialState = {
+  deneme: 'null'
+};
 
-export const initialState = fromJS({
-  data: null,
-});
-
-function homeScreenReducer(state = initialState, action) {
-  switch (action.type) {
-    case DEFAULT_ACTION:
-      return state;
-    case PUT_TEST_DATA:
-      return state.merge({ data: action.data });
-    default:
-      return state;
-  }
-}
+/* eslint-disable default-case, no-param-reassign */
+const homeScreenReducer = (state = initialState, action) =>
+  produce(state, (/* draft */) => {
+    switch (action.type) {
+      case DEFAULT_ACTION:
+        break;
+    }
+  });
 
 export default homeScreenReducer;

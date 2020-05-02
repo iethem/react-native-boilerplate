@@ -3,19 +3,18 @@
  * DetailsScreen reducer
  *
  */
-
-import { fromJS } from 'immutable';
+import produce from 'immer';
 import { DEFAULT_ACTION } from './constants';
 
-export const initialState = fromJS({});
+export const initialState = {};
 
-function detailsScreenReducer(state = initialState, action) {
-  switch (action.type) {
-    case DEFAULT_ACTION:
-      return state;
-    default:
-      return state;
-  }
-}
+/* eslint-disable default-case, no-param-reassign */
+const detailsScreenReducer = (state = initialState, action) =>
+  produce(state, (/* draft */) => {
+    switch (action.type) {
+      case DEFAULT_ACTION:
+        break;
+    }
+  });
 
 export default detailsScreenReducer;

@@ -1,7 +1,17 @@
 {
   "name": "reactnativeboilerplate",
   "version": "0.0.1",
-  "private": true,
+  "description": "A react-native project template with the best DX and a focus on performance and best practices.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iethem/react-native-boilerplate.git"
+  },
+  "engines": {
+    "npm": ">=5",
+    "node": ">=8.15.1"
+  },
+  "author": "İbrahim Ethem Topçu",
+  "license": "MIT",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",

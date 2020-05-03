@@ -53,25 +53,28 @@ There’s also a <a href="https://vimeo.com/168648012">fantastic video</a> on ho
 ## Quick start
 
 1.  Make sure that you have Node.js v8.15.1 and npm v5 or above installed.
-2.  Clone this repo using `git clone --depth=1 https://github.com/iethem/react-native-boilerplate.git <YOUR_PROJECT_NAME>`
-3.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.<br />
-4.  Run `npm run setup` in order to install dependencies and clean the git repo.<br />
+2.  Make sure [the development environment](https://reactnative.dev/docs/environment-setup) is configured properly. 
+3.  Clone this repo using `git clone --depth=1 https://github.com/iethem/react-native-boilerplate.git <YOUR_PROJECT_NAME>`
+4.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.<br />
+5.  Run `npm run setup` in order to install dependencies and clean the git repo.<br />
 At this point you can run the following commands to see the example app:
     
     For <b>IOS</b>:
     ```sh
     npx pod-install # to install pod dependencies
-    npm run ios # to run the iOS application
+    npm run ios     # to run the iOS application
     ```   
     For <b>Android</b>:
     ```sh
+    # Make sure the ANDROID_HOME environment variable is configured properly
+    
     npm run android # to run the Android application
     ```
     Start the server:
     ```sh
     npm start
     ```
-5.  Run `npm run clean` to delete the example app.
+6.  Run `npm run clean` to delete the example app.
 
 Now you're ready to rumble!
 

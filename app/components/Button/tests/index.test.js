@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render } from 'react-native-testing-library';
 // import 'jest-dom/extend-expect'; // add some helpful assertions
 
 import Button from '../index';

@@ -1,13 +1,17 @@
-import { defaultAction } from '../actions';
-import { DEFAULT_ACTION } from '../constants';
+import { CHANGE_USERNAME } from '../constants';
 
-describe('ReposScreen actions', () => {
-  describe('Default Action', () => {
-    it('has a type of DEFAULT_ACTION', () => {
-      const expected = {
-        type: DEFAULT_ACTION,
+import { changeUsername } from '../actions';
+
+describe('ReposScreen Actions', () => {
+  describe('changeUsername', () => {
+    it('should return the correct type and the passed name', () => {
+      const fixture = 'Max';
+      const expectedResult = {
+        type: CHANGE_USERNAME,
+        username: fixture,
       };
-      expect(defaultAction()).toEqual(expected);
+
+      expect(changeUsername(fixture)).toEqual(expectedResult);
     });
   });
 });

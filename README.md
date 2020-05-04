@@ -54,8 +54,14 @@ There’s also a <a href="https://vimeo.com/168648012">fantastic video</a> on ho
 
 1.  Make sure that you have Node.js v8.15.1 and npm v5 or above installed.
 2.  Make sure [the development environment](https://reactnative.dev/docs/environment-setup) is configured properly. 
-3.  Clone this repo using `git clone --depth=1 https://github.com/iethem/react-native-boilerplate.git <YOUR_PROJECT_NAME>`
-4.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.<br />
+3.  Clone this repo using the following command:
+    ```command
+    git clone --depth=1 https://github.com/iethem/react-native-boilerplate.git <YOUR_PROJECT_NAME>
+    ```
+4.  Move to the appropriate directory: 
+    ```command
+    cd <YOUR_PROJECT_NAME>
+    ```
 5.  Run `npm run setup` in order to install dependencies and clean the git repo.<br />
 At this point you can run the following commands to see the example app:
     
@@ -87,7 +93,7 @@ Now you're ready to rumble!
 - [Overview](docs/general): A short overview of the included tools
 - [**Commands**](docs/general/commands.md): Getting the most out of this boilerplate
 - [Testing](docs/testing): How to work with the built-in test harness
-- [Your app](docs/js): Supercharging your app with Routing, Redux, simple
+- [Your app](docs/js): Supercharging your app with Navigating, Redux, simple
   asynchronicity helpers, etc.
 - [**Troubleshooting**](docs/general/gotchas.md): Solutions to common problems faced by developers.
 

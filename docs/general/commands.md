@@ -6,7 +6,7 @@
 npm run setup
 ```
 
-Initializes a new project with this boilerplate. Deletes the `react-boilerplate`
+Initializes a new project with this boilerplate. Deletes the `react-native-boilerplate`
 git history, installs the dependencies and initializes a new repository.
 
 > Note: This command is self-destructive, once you've run it the init script is
@@ -15,11 +15,23 @@ git history, installs the dependencies and initializes a new repository.
 
 ## Development
 
-```Shell
-npm run start
+For <b>IOS</b>:
+```sh
+npx pod-install # to install pod dependencies
+npm run ios     # to run the iOS application
+```   
+
+For <b>Android</b>:
+```sh
+# Make sure the ANDROID_HOME environment variable is configured properly
+
+npm run android # to run the Android application
 ```
 
-Starts the development server running on `http://localhost:3000`
+Start the server:
+```sh
+npm start
+```
 
 ## Cleaning
 
@@ -44,37 +56,7 @@ Allows you to auto-generate boilerplate code for common parts of your
 application, specifically `component`s, and `container`s. You can
 also run `npm run generate <part>` to skip the first selection. (e.g. `npm run generate container`)
 
-## Server
-
-### Development
-
-```Shell
-npm start
-```
-
-Starts the development server and makes your application accessible at
-`localhost:3000`. Changes in the application code will be hot-reloaded.
-
-### Production
-
-```Shell
-npm run start:production
-```
-
-- Runs tests (see `npm test`)
-- Builds your app (see `npm run build`)
-- Starts the production server (see `npm run start:prod`)
-
-The app is built for optimal performance: assets are
-minified and served gzipped.
-
-### Host and Port
-
-To change the host and/or port the app is accessible at, pass the `--host` and/or `--port` option to the command
-with `--`. E.g. to make the app visible at `my-local-hostname:5000`, run the following:
-`npm start -- --host my-local-hostname --port 5000`
-
-## Building
+## Building (:warning: Work in progress)
 
 ```Shell
 npm run build
@@ -85,12 +67,12 @@ Preps your app for deployment (does not run tests). Optimizes and minifies all f
 Upload the contents of `build` to your web server to
 see your work live!
 
-## Testing
+## Testing (:warning: Work in progress)
 
 See the [testing documentation](../testing/README.md) for detailed information
 about our testing setup!
 
-## Unit testing
+## Unit testing (:warning: Work in progress)
 
 ```Shell
 npm test

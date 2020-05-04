@@ -1,4 +1,4 @@
-# react-native-boilerplate
+![alt text](./banner.png "banner")
 
 <!-- [![react-native-boilerplate](/.gh-assets/header.png)](https://github.com/iethem/react-native-boilerplate) -->
 <div align="center"><strong>Start your next react-native project in seconds</strong></div>

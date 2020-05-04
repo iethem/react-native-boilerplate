@@ -1,3 +1,5 @@
+![alt text](./banner.png "banner")
+
 # react-native-boilerplate
 
 <!-- [![react-native-boilerplate](/.gh-assets/header.png)](https://github.com/iethem/react-native-boilerplate) -->

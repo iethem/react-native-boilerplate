@@ -18,7 +18,7 @@ git history, installs the dependencies and initializes a new repository.
 ```command
 npm run rename
 ```
-In order to change app name you can use this command. See details below:
+In order to rename your app you can use this command. See details below:
 
 > Note: This script uses [react-native-rename](https://github.com/junedomingo/react-native-rename) package. This package does not attempt to properly rename build artifacts such as `ios/build` or Cocoa Pod installation targets. After renaming your project you should clean, build, and reinstall third party dependencies to get it running properly with the new name.
 

@@ -13,7 +13,7 @@ git history, installs the dependencies and initializes a new repository.
 > gone forever. This is for your own safety, so you can't delete your project's
 > history irreversibly by accident.
 
-## Changing App Name
+## Renaming the app
 
 ```command
 npm run rename

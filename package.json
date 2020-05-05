@@ -24,7 +24,7 @@
     "lint": "eslint .",
     "prettify": "prettier --write",
     "extract-intl": "node ./internals/scripts/extract-intl.js",
-    "rename": "react-native-rename"
+    "rename": "npx react-native-rename"
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
@@ -77,7 +77,6 @@
     "prettier": "^1.19.1",
     "prettify": "^0.1.7",
     "raf": "^3.4.1",
-    "react-native-rename": "^2.4.1",
     "react-native-testing-library": "^1.13.2",
     "react-test-renderer": "16.11.0",
     "shelljs": "^0.8.4"

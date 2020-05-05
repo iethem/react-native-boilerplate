@@ -66,18 +66,18 @@ There’s also a <a href="https://vimeo.com/168648012">fantastic video</a> on ho
 At this point you can run the following commands to see the example app:
     
     For <b>IOS</b>:
-    ```sh
+    ```command
     npx pod-install # to install pod dependencies
     npm run ios     # to run the iOS application
     ```   
     For <b>Android</b>:
-    ```sh
+    ```command
     # Make sure the ANDROID_HOME environment variable is configured properly
     
     npm run android # to run the Android application
     ```
     Start the server:
-    ```sh
+    ```command
     npm start
     ```
 6.  Run `npm run clean` to delete the example app.
@@ -85,6 +85,8 @@ At this point you can run the following commands to see the example app:
 Now you're ready to rumble!
 
 > Please note that this boilerplate is **production-ready and not meant for beginners**! If you're just starting out with react or redux, please refer to https://github.com/petehunt/react-howto instead. If you want a solid, battle-tested base to build your next product upon and have some experience with react, this is the perfect start for you.
+
+> In order to rename your app check [the documentation](docs/general/commands.md#renaming-the-app).
 
 ## Documentation
 :warning: **WORK IN PROGRESS**

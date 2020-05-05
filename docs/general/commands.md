@@ -13,6 +13,39 @@ git history, installs the dependencies and initializes a new repository.
 > gone forever. This is for your own safety, so you can't delete your project's
 > history irreversibly by accident.
 
+## Changing App Name
+
+```command
+npm run rename
+```
+In order to change app name you can use this command. See details below:
+
+> Note: This script uses [react-native-rename](https://github.com/junedomingo/react-native-rename) package. This package does not attempt to properly rename build artifacts such as `ios/build` or Cocoa Pod installation targets. After renaming your project you should clean, build, and reinstall third party dependencies to get it running properly with the new name.
+
+```command
+npm run rename <newName>
+```
+
+> With custom Bundle Identifier (Android only. For iOS, please use Xcode)
+```
+npm run rename <newName> -b <bundleIdentifier>
+```
+
+Example:
+
+##### First, Switch to new branch (optional but recommended)
+```
+$ git checkout -b rename-app
+```
+##### Then, Rename your app
+```
+$ npm run rename "Travel App"
+```
+> With custom Bundle Identifier
+```
+$ npm run rename "Travel App" -b com.rnboilerplate.travelapp
+```
+
 ## Development
 
 For <b>IOS</b>:

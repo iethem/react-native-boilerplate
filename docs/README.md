@@ -49,7 +49,7 @@ After making your IOS and Android configuration according to your operating syst
 1.  Let's kick the tyres by launching the sample _Repospective_ app
     bundled with this project to demo some of its best features:
 
-    ```Shells
+    ```sh
     npm run setup
     ```
 

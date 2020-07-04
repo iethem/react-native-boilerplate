@@ -104,6 +104,10 @@ Now you're ready to rumble!
   asynchronicity helpers, etc.
 - [**Troubleshooting**](docs/general/gotchas.md): Solutions to common problems faced by developers.
 
+## Examples
+
+- [react-native-games](https://github.com/iethem/react-native-games)
+
 ## Contributors
 
 Thanks to you all the [react-boilerplate contributors](https://github.com/react-boilerplate/react-boilerplate#contributors)! 

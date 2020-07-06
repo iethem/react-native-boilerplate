@@ -50,44 +50,49 @@ There’s also a <a href="https://vimeo.com/168648012">fantastic video</a> on ho
 
 <sub><i>Keywords: React.js, React-Native, Redux, Hot Reloading, ESNext, Babel, react-navigation, redux-saga, IOS, Android</i></sub>
 
-## Quick start
+## Quick start (recommended)
 
-> Make sure that you have Node.js v8.15.1 and npm v5 or above installed.
+> Make sure that you have Node.js v8.15.1 and npm v5 or above installed. Also, [the development environment](https://reactnative.dev/docs/environment-setup) is configured properly.
 
-> Make sure [the development environment](https://reactnative.dev/docs/environment-setup) is configured properly. 
+You can use react-native-boilerplate as a template when creating projects with `react-native init`:
+```command
+npx react-native init <projectName> --template rnb-init
+```
 
-1.  Clone this repo using the following command:
-    ```command
-    git clone --depth=1 https://github.com/iethem/react-native-boilerplate.git <YOUR_PROJECT_NAME>
-    ```
-1.  Move to the appropriate directory: 
-    ```command
-    cd <YOUR_PROJECT_NAME>
-    ```
-1. In order to rename the application (optional):
-    ```command
-    npm run rename "Travel App"
-    ```
-    > See details for [renaming the app](docs/general/commands.md#renaming-the-app).
-1.  Run `npm run setup` in order to install dependencies and clean the git repo.<br />
+## Manual Installation
+
+#### 1.  Clone this repo using the following command:
+```command
+git clone --depth=1 https://github.com/iethem/react-native-boilerplate.git <YOUR_PROJECT_NAME>
+```
+#### 2.  Move to the appropriate directory: 
+```command
+cd <YOUR_PROJECT_NAME>
+```
+#### 3. In order to rename the application (optional):
+```command
+npm run rename "Travel App"
+```
+  > See details for [renaming the app](docs/general/commands.md#renaming-the-app).
+#### 4.  Run `npm run setup` in order to install dependencies and clean the git repo.<br />
 At this point you can run the following commands to see the example app:
-    
-    For <b>IOS</b>:
-    ```command
-    npx pod-install # to install pod dependencies
-    npm run ios     # to run the iOS application
-    ```   
-    For <b>Android</b>:
-    ```command
-    # Make sure the ANDROID_HOME environment variable is configured properly
-    
-    npm run android # to run the Android application
-    ```
-    Start the server:
-    ```command
-    npm start
-    ```
-1.  Run `npm run clean` to delete the example app.
+
+For <b>IOS</b>:
+```command
+npx pod-install # to install pod dependencies
+npm run ios     # to run the iOS application
+```   
+For <b>Android</b>:
+```command
+# Make sure the ANDROID_HOME environment variable is configured properly
+
+npm run android # to run the Android application
+```
+Start the server:
+```command
+npm start
+```
+#### 5.  Run `npm run clean` to delete the example app.
 
 Now you're ready to rumble!
 
